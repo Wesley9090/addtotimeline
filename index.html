@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./form-add.js"></script>
+    
+ <style type="text/css">
+  #popup{
+    background-color: darkgray;
+    width: 400px;
+    height: 400px;
+    margin-left: 1px;
+    margin-top: 1px;
+    position:top;
+    display: none;
+  }
+ </style>
+ <script type="text/javascript">
+  
+  function abrir(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function Fechar(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+
+ </script>
+</head>
+
+<body>
+
+    <h3>Adicionar na TimeLine</h3>
+   
+   
+    <script> 
+    
+      
+        // function criate() {
+        //     let name = document.getElementById("name").value;
+        //     let date = document.getElementById("date").value;
+        //     console.log("Nome: "+name);
+            
+        // }
+    
+        // function save() {
+        //   var name = document.getElementById("name").value;
+        //   console.log(
+        //     document.getElementById("name").innerHTML
+        //   );
+        // }
+        
+        
+        
+    </script>
+     <form id="formAdd">
+      <label for="name">Nome:</label>
+      <input 
+      type="text"
+      id="name"
+      name="name" 
+      placeholder="Digite o nome" 
+      required
+      /><br><br>
+
+      <!-- <br><br><button type="submit" onclick="save()" id="save" value="Enviar">Save</button> -->
+      <label for="date">Data</label>
+      <input id="date" type="date" name="date" placeholder="Digite a data"><br><br>
+      <label for="description">Descrição</label>
+      <input id="description" for="text" name="description" placeholder="Insira a descrição">
+      <!-- <label for="image">Import image:</label>
+      <input id="image" type="image" name="importImage" ><br>
+     
+      </div> -->
+    </div>
+
+      <br><br><button id="save" class="btn btn btn-info" onclick="window.location.href = './confirm.html'">Salvar</button>
+      <!-- <a href="javascript:;"onclick="abrir('popup')" >Abrir</a>
+      <div id="popup">
+       
+        <a href="javascript:;" onclick="Fechar('popup')">Fechar</a> 
+        <h1>Hello world</h1>
+         -->
+      <!-- </div>
+      
+        
+      <button type="button" onclick="calcel()">Calcelar</button> </form>
+      <div id='confirmation'>
+          <h2>Os dados estão corretos? <span id="confirmation"></span></h2>
+          <button id="yes">Sim</button>
+          <button id="no">Não</button>
+      </div> -->
+
+     
+
+      <script type="module" src="./scripts.js">;
+      </script>
+   
+
+    </script>
+    <script type="module" src="./confirm.html"></script>
+
+
+     <!-- </form> 
+     <form action="./confirm.html">
+      <input type="submit" value="go to confirm">
+     </form> -->
+    </body>
+</html>

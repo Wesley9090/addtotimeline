@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="./form-add.js"></script>
+<!-- <script>
+    eName = (eName);
+    eDate = (eDate);
+    eDescription = (eDescription)
+    
+</script> -->
+<style>
+
+</style>
+<script>
+    const name = localStorage.getItem('name');
+    const date = localStorage.getItem('date');
+    const description = localStorage.getItem('description');
+    
+    console.log(name, date, description);
+
+    
+   
+
+
+
+</script>
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <p> Nome: <div id="dName"></div>
+     <script>
+        dName.innerHTML = name;
+    </script>
+   </p>
+   
+   <p> Data: <div id="dDate"></div>
+    <script>
+       dDate.innerHTML = date;
+   </script>
+  </p>
+
+  <p> Descrição:<div id="dDescription"></div>
+    <script>
+       dDescription.innerHTML = description;
+   </script>
+  </p>
+
+</body>
+</html>
