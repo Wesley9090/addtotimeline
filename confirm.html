@@ -1,58 +1,64 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<script src="./form-add.js"></script>
-<!-- <script>
-    eName = (eName);
-    eDate = (eDate);
-    eDescription = (eDescription)
-    
-</script> -->
-<style>
 
-</style>
-<script>
-    const name = localStorage.getItem('name');
-    const date = localStorage.getItem('date');
-    const description = localStorage.getItem('description');
-    
-    console.log(name, date, description);
-
-    
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
 
+  <style type="text/css">
+    #popup {
+      background-color: darkgray;
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+    }
+  </style>
 
-</script>
-
-
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 
-
 <body>
-    <p> Nome: <div id="dName"></div>
-     <script>
-        dName.innerHTML = name;
-    </script>
-   </p>
-   
-   <p> Data: <div id="dDate"></div>
-    <script>
-       dDate.innerHTML = date;
-   </script>
-  </p>
 
-  <p> Descrição:<div id="dDescription"></div>
-    <script>
-       dDescription.innerHTML = description;
-   </script>
-  </p>
+  <h3>Adicionar na TimeLine</h3>
 
+
+
+  <form id="formAdd">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Digite o nome" required /><br><br>
+
+    <label for="date">Data</label>
+    <input id="date" type="date" name="date" placeholder="Digite a data"><br><br>
+    <label for="description">Descrição</label>
+    <input id="description" for="text" name="description" placeholder="Insira a descrição">
+</form>
+    
+
+    <br><br><button id="save" class="btn btn btn-info" onclick="Abrir('popup')">Salvar</button>
+
+
+    <div id="popup">
+      <p id="Name"></p>
+      <p id="Date"></p>
+      <p id="Description"></p>
+      
+      <h1>Seus dados estão corretos?</h1>
+      <p>Nome:<div id="nameInner"></div></p>
+      <p>Data:<div id="dateInner"></div></p>
+      <p>Descrição:<div id="descriptionInner"></div></p>
+
+      <a href="javascript:;" onclick="edit('popup')">Editar</a>
+      <a href="javascript:;" onclick="save()">Salvar</a>
+
+    </div>
+    
+    <script type="text/javascript" src="./form-add.js"></script>
 </body>
+
 </html>
